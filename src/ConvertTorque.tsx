@@ -1,5 +1,4 @@
 import * as React from 'react';
-import './ConvertTorque.css';
 
 interface State {
 	poundfeet: number | null;
@@ -19,20 +18,22 @@ export default class ConvertTorque extends React.Component<{}, State> {
 	render () {
 		const { poundfeet, newtonmetres } = this.state;
 		return (
-			<form className="ConvertTorque" onSubmit={this.handleFormSubmit}>
-				<div>
+			<form className="ConvertTorque row" onSubmit={this.handleFormSubmit}>
+				<div className="form-group col-sm">
 					<label htmlFor="ConvertTorque-poundfeet">Pound feet</label><br />
 					<input
 						id="ConvertTorque-poundfeet"
+						className="form-control"
 						type="number"
 						value={poundfeet || ''}
 						onChange={this.handlePoundfeetChange}
 					/>
 				</div>
-				<div>
+				<div className="form-group col-sm">
 					<label htmlFor="ConvertTorque-newtonmetres">Newton metres</label><br />
 					<input
 						id="ConvertTorque-newtonmetres"
+						className="form-control"
 						type="number"
 						value={newtonmetres || ''}
 						onChange={this.handleNewtonmetresChange}

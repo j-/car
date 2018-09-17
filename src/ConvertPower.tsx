@@ -1,5 +1,4 @@
 import * as React from 'react';
-import './ConvertPower.css';
 
 interface State {
 	horsepower: number | null;
@@ -20,20 +19,22 @@ export default class ConvertPower extends React.Component<{}, State> {
 	render () {
 		const { horsepower, kilowatts } = this.state;
 		return (
-			<form className="ConvertPower" onSubmit={this.handleFormSubmit}>
-				<div>
+			<form className="ConvertPower row" onSubmit={this.handleFormSubmit}>
+				<div className="form-group col-sm">
 					<label htmlFor="ConvertPower-horsepower">Horsepower</label><br />
 					<input
 						id="ConvertPower-horsepower"
+						className="form-control"
 						type="number"
 						value={horsepower || ''}
 						onChange={this.handleHorsepowerChange}
 					/>
 				</div>
-				<div>
+				<div className="form-group col-sm">
 					<label htmlFor="ConvertPower-kilowatts">Kilowatts</label><br />
 					<input
 						id="ConvertPower-kilowatts"
+						className="form-control"
 						type="number"
 						value={kilowatts || ''}
 						onChange={this.handleKilowattsChange}
