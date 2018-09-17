@@ -1,0 +1,14 @@
+.ConvertPower {
+	display: flex;
+	flex-direction: row;
+}
+
+.ConvertPower > div {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+}
+
+.ConvertPower > div > br {
+	display: none;
+}
