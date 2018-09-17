@@ -38,7 +38,7 @@ export default class ConvertPressure extends React.Component<{}, State> {
 					/>
 				</div>
 				<div className="form-group col-sm-6">
-					<label htmlFor="ConvertPressure-psi">Psi</label><br />
+					<label htmlFor="ConvertPressure-psi">Pounds per square inch</label><br />
 					<input
 						id="ConvertPressure-psi"
 						className="form-control"
