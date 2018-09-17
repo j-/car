@@ -20,7 +20,7 @@ export default class ConvertTorque extends React.Component<{}, State> {
 		return (
 			<form className="ConvertTorque row" onSubmit={this.handleFormSubmit}>
 				<div className="form-group col-sm">
-					<label htmlFor="ConvertTorque-poundfeet">Pound feet</label><br />
+					<label htmlFor="ConvertTorque-poundfeet">Foot pounds</label><br />
 					<input
 						id="ConvertTorque-poundfeet"
 						className="form-control"
