@@ -4,6 +4,7 @@ import ConvertTorque from './ConvertTorque';
 import ConvertSpeed from './ConvertSpeed';
 import ConvertPressure from './ConvertPressure';
 import ConvertWeight from './ConvertWeight';
+import ConvertMileage from './ConvertMileage';
 
 const App: React.StatelessComponent = () => (
 	<div className="App container">
@@ -55,6 +56,15 @@ const App: React.StatelessComponent = () => (
 		<br />
 
 		<ConvertWeight />
+
+		<br />
+		<br />
+
+		<h2>Fuel economy</h2>
+
+		<br />
+
+		<ConvertMileage />
 	</div>
 );
 
