@@ -1,6 +1,7 @@
 import * as React from 'react';
 import ConvertPower from './ConvertPower';
 import ConvertTorque from './ConvertTorque';
+import ConvertSpeed from './ConvertSpeed';
 
 const App: React.StatelessComponent = () => (
 	<div className="App container">
@@ -25,6 +26,15 @@ const App: React.StatelessComponent = () => (
 		<br />
 
 		<ConvertTorque />
+
+		<br />
+		<br />
+
+		<h2>Speed</h2>
+
+		<br />
+
+		<ConvertSpeed />
 	</div>
 );
 
