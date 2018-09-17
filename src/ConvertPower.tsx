@@ -6,7 +6,8 @@ interface State {
 	kilowatts: number | null;
 }
 
-const HP_TO_KW_RATIO = 0.746;
+/** @see https://www.kwtohp.net/hp-to-kw-conversion */
+const HP_TO_KW_RATIO = 0.745699872;
 const DEFAULT_HP = 1000;
 const DEFAULT_KW = DEFAULT_HP * HP_TO_KW_RATIO;
 
